@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rayyan Nour - Data Science Student</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Fonts for a modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Rayyan Nour - Data Science Professional</title>
+  <!-- Using Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
   <style>
-    /* Global Styles */
+    /* Reset and base styles */
     * {
       margin: 0;
       padding: 0;
@@ -18,253 +16,258 @@
     body {
       font-family: 'Roboto', sans-serif;
       line-height: 1.6;
-      background: #f4f4f4;
       color: #333;
+      background: #fafafa;
     }
     a {
       text-decoration: none;
-      color: inherit;
     }
-    /* Header & Navigation */
+
+    /* Header styling */
     header {
-      background: #333;
+      background: linear-gradient(135deg, #4a90e2, #50c9c3);
+      padding: 20px;
       color: #fff;
-      padding: 40px 0;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
-      font-size: 2.5rem;
       margin-bottom: 10px;
+      font-size: 2rem;
     }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-    nav {
-      background: #444;
-    }
-    nav .container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
+    header nav a {
       color: #fff;
-      padding: 15px 20px;
-      transition: background 0.3s;
-      font-weight: 500;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
     }
-    nav a:hover {
-      background: #555;
+    header nav a:hover {
+      color: #e0eafc;
     }
-    /* Container */
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-      overflow: hidden;
-      padding: 20px 0;
-    }
-    /* Section Titles */
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .section-title h2 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    .section-title p {
-      font-size: 1rem;
-      color: #777;
-    }
-    /* Resume Section */
-    .resume-section {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
-    }
-    .resume-item {
-      margin-bottom: 30px;
-    }
-    .resume-item h3 {
-      font-size: 1.5rem;
-      color: #333;
-      margin-bottom: 5px;
-    }
-    .resume-item h4 {
-      font-size: 1.2rem;
-      color: #666;
-      margin-bottom: 10px;
-    }
-    .resume-item p,
-    .resume-item li {
-      font-size: 1rem;
-      margin-bottom: 5px;
-      color: #555;
-    }
-    .resume-item ul {
-      margin-left: 20px;
-      list-style: disc;
-    }
-    /* Skills Styling */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .skill {
-      background: #e2e2e2;
-      padding: 8px 12px;
-      border-radius: 4px;
-      font-size: 0.9rem;
-    }
-    /* Sections */
+
+    /* Section styles */
     section {
-      padding: 60px 0;
+      padding: 60px 20px;
     }
-    /* Footer */
+    .section-light {
+      background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    }
+    .section-dark {
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Content blocks */
+    .content-block {
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    
+    /* Experience & Projects styling */
+    .experience, .project {
+      margin-bottom: 20px;
+    }
+    .experience h3, .project h3 {
+      margin-bottom: 10px;
+      color: #4a90e2;
+    }
+    .experience p, .project p {
+      margin-bottom: 10px;
+    }
+    
+    /* Footer styling */
     footer {
-      background: #333;
+      background: linear-gradient(135deg, #4a90e2, #50c9c3);
       color: #fff;
       text-align: center;
-      padding: 20px 0;
+      padding: 20px;
     }
-    /* Responsive Adjustments */
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    
+    /* Responsive adjustments */
     @media (max-width: 768px) {
-      nav .container {
-        flex-direction: column;
+      header nav a {
+        margin: 0 10px;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Header Section -->
+  <!-- Header with navigation -->
   <header>
-    <div class="container">
-      <h1>Rayyan Nour</h1>
-      <p>Data Science Student | Software Engineer | Data Analyst</p>
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#resume">Resume</a>
+    <h1>Rayyan Nour</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- About Section -->
-  <section id="about">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section-dark">
     <div class="container">
-      <div class="section-title">
-        <h2>About Me</h2>
-        <p>
-          I am a passionate Data Science student with hands-on experience in software engineering and data analysis. My work on complex projects and internships has helped me build a robust technical skill set and an innovative approach to solving real-world problems.
-        </p>
+      <h1>Welcome!</h1>
+      <p>
+        I'm Rayyan Nour, a passionate Data Science student at the University of Texas at Dallas.
+        Explore my professional journey below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section-light">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="content-block">
+        <h3>University of Texas at Dallas, Richardson, TX</h3>
+        <p><strong>B.S. in Data Science</strong> <em>May 2026</em></p>
+        <p><strong>Coursework:</strong></p>
+        <ul>
+          <li>Data Structures and Algorithms</li>
+          <li>Database Systems</li>
+          <li>Machine Learning</li>
+          <li>Applied Linear Models</li>
+          <li>Introduction to Statistical Learning</li>
+          <li>Advanced Calculus</li>
+          <li>Theoretical Concepts of Calculus</li>
+          <li>Linear Algebra</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Resume Section -->
-  <section id="resume">
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section-dark">
     <div class="container">
-      <div class="section-title">
-        <h2>Resume</h2>
-      </div>
-      <div class="resume-section">
-        <!-- Education -->
-        <div class="resume-item">
-          <h3>Education</h3>
-          <h4>University of Texas at Dallas, Richardson, TX</h4>
-          <p><strong>B.S, Data Science</strong> – May 2026</p>
-          <p>
-            <strong>Coursework:</strong> Data Structures and Algorithms, Database Systems, Machine Learning, Applied Linear Models, Introduction to Statistical Learning, Advanced Calculus, Theoretical Concepts of Calculus, Linear Algebra
-          </p>
-        </div>
-        <!-- Technical Skills -->
-        <div class="resume-item">
-          <h3>Technical Skills</h3>
-          <div class="skills">
-            <span class="skill">Java</span>
-            <span class="skill">Python</span>
-            <span class="skill">C++</span>
-            <span class="skill">R</span>
-            <span class="skill">SQL</span>
-            <span class="skill">SQLite</span>
-            <span class="skill">MongoDB</span>
-            <span class="skill">OpenCV</span>
-            <span class="skill">TensorFlow</span>
-            <span class="skill">Tkinter</span>
-            <span class="skill">NumPy</span>
-            <span class="skill">Pillow</span>
-          </div>
-        </div>
-        <!-- Work Experience -->
-        <div class="resume-item">
-          <h3>Work Experience</h3>
-          <h4>ROGII INC, Houston, TX</h4>
-          <p><em>Software Engineering Intern (June 2024 – August 2024)</em></p>
-          <ul>
-            <li>Developed an interactive TIFF viewer for high-resolution drilling log analysis (up to 10,000 x 10,000 pixels), increasing geological data interpretation efficiency by 30%.</li>
-            <li>Implemented real-time filtering options (Gaussian blur, Laplacian, morphological transformations) for regions up to 2,000 x 2,000 pixels in under 150 ms, boosting interpretability by 25%.</li>
-            <li>Engineered color-based point extraction to process over 1,500 points in less than 50 ms with 98% accuracy.</li>
-            <li>Optimized large image handling with multithreading and asynchronous operations—reducing load times by 40% and memory usage by 20%.</li>
-            <li>Developed dynamic zoom and overlay features with real-time annotation scaling, ensuring 100% alignment accuracy.</li>
-          </ul>
-          <h4>Meem Behavioral Institute, Arlington, TX</h4>
-          <p><em>Data Analyst Intern (May 2023 – August 2023)</em></p>
-          <ul>
-            <li>Conducted in-depth time series analysis on behavioral data to uncover temporal patterns.</li>
-            <li>Utilized Python (pandas and matplotlib) for data preprocessing and visualization.</li>
-            <li>Applied statistical tests such as autocorrelation analysis and rolling correlation to enhance analytical accuracy.</li>
-            <li>Produced clear visualizations (ACF plots and rolling correlation graphs) to communicate insights effectively.</li>
-            <li>Delivered actionable recommendations that positively influenced organizational strategy.</li>
-          </ul>
-        </div>
-        <!-- Academic Projects -->
-        <div class="resume-item">
-          <h3>Academic Projects</h3>
-          <h4>Computer Network Intrusion Detection Research</h4>
-          <p><em>Undergraduate Research Group – Under Professor Dr. Brian Ricks (August 2024 - Current)</em></p>
-          <p>
-            Developed machine learning models using Python, scikit-learn, k-Nearest Neighbors (kNN), and k-Means clustering to improve detection of network intrusions (including zero-day, DDoS, and SYN Flood attacks) by refining precision and recall metrics.
-          </p>
-        </div>
+      <h2>Technical Skills</h2>
+      <div class="content-block">
+        <p><strong>Programming Languages:</strong> Java, Python, C++, R</p>
+        <p><strong>Databases:</strong> SQL, SQLite, MongoDB</p>
+        <p><strong>Frameworks &amp; Tools:</strong> OpenCV, TensorFlow, Tkinter, NumPy, Pillow</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
+  <!-- Work Experience Section -->
+  <section id="experience" class="section-light">
     <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
+      <h2>Work Experience</h2>
+      <div class="content-block experience">
+        <h3>ROGII INC, Houston, TX</h3>
+        <p><strong>Software Engineering Intern</strong> (June 2024 – August 2024)</p>
+        <ul>
+          <li>
+            Developed an interactive TIFF viewer for high-resolution drilling log analysis, supporting images up to 10,000 x 10,000 pixels,
+            enhancing geological data interpretation efficiency by 30%.
+          </li>
+          <li>
+            Implemented real-time filtering options (Gaussian blur, Laplacian, morphological transformations) for regions up to 2,000 x 2,000 pixels,
+            processing filters in under 150 milliseconds and boosting interpretability by 25%.
+          </li>
+          <li>
+            Engineered color-based point extraction functionality, processing over 1,500 points in less than 50 milliseconds with 98% accuracy.
+          </li>
+          <li>
+            Optimized large image handling through multithreading and asynchronous operations, reducing load times by 40% and memory usage by 20%.
+          </li>
+          <li>
+            Developed dynamic zoom and overlay features with real-time annotation scaling, ensuring 100% alignment accuracy across zoom levels.
+          </li>
+        </ul>
       </div>
-      <div class="resume-section">
+      <div class="content-block experience">
+        <h3>Meem Behavioral Institute, Arlington, TX</h3>
+        <p><strong>Data Analyst Intern</strong> (May 2023 – August 2023)</p>
+        <ul>
+          <li>
+            Conducted in-depth time series analysis on problem behaviors data to uncover temporal patterns and dependencies.
+          </li>
+          <li>
+            Leveraged Python with pandas and matplotlib for data preprocessing and visualization.
+          </li>
+          <li>
+            Applied statistical tests including autocorrelation analysis and rolling correlation to identify significant correlations.
+          </li>
+          <li>
+            Produced compelling visualizations such as ACF plots and rolling correlation graphs to illustrate findings.
+          </li>
+          <li>
+            Delivered actionable insights and recommendations to drive informed decision-making processes.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Projects Section -->
+  <section id="projects" class="section-dark">
+    <div class="container">
+      <h2>Academic Projects</h2>
+      <div class="content-block project">
+        <h3>Computer Network Intrusion Detection Research</h3>
         <p>
-Computer Network Intrusion Detection Research                                                                            
+          <strong>Undergraduate Research Group</strong> under Professor Dr. Brian Ricks (August 2024 - Current)
         </p>
+        <ul>
+          <li>
+            Developed machine learning models for network intrusion detection using Python, scikit-learn, k-Nearest Neighbors (kNN), and k-Means clustering.
+          </li>
+          <li>
+            Enhanced detection of zero-day threats, DDoS, and SYN Flood attacks by refining precision and recall metrics.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="section-light">
     <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-      <div class="resume-section">
+      <h2>Contact</h2>
+      <div class="content-block">
         <p>
-          For inquiries, please email me at <a href="mailto:rayyan03.nour@gmail.com">rayyan03.nour@gmail.com</a> or connect with me on LinkedIn.
+          Feel free to reach out for opportunities or collaborations.
+        </p>
+        <p>
+          Email: <a href="mailto:rayyan03.nour@gmail.com">rayyan03.nour@gmail.com</a>
         </p>
       </div>
     </div>
@@ -272,9 +275,7 @@ Computer Network Intrusion Detection Research
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Rayyan Nour. All Rights Reserved.</p>
-    </div>
+    <p>&copy; 2025 Rayyan Nour. All rights reserved.</p>
   </footer>
 </body>
 </html>
